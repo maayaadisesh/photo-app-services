@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
         @Override
         public void addCorsMappings(CorsRegistry registry) {
-            registry.addMapping("localhost:*");
+            registry.addMapping("/images").allowedOrigins("http://localhost:8100");
         }
 
 }
